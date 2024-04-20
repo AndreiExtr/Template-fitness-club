@@ -1,0 +1,74 @@
+$primary-background-color: #EBEBE9;
+$primary-font-color: #333333;
+$hover-button-color: #333333;
+$primary-font1: 'Roboto';
+
+.header{
+  width: 100%;
+  height: 140px;
+  background-color: $primary-background-color;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+
+  &__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+
+    img {
+      height: auto; 
+      width: 150px;
+
+      @media screen and (max-width: 952px) {
+        height: auto; 
+        width: 117px;
+        margin-left: 32px;
+      }
+    }
+
+    .header__burger{
+      @media screen and (max-width: 952px) {
+        margin-right: 32px;
+      }
+
+      @media screen and (min-width: 953px) {
+        display: none;
+      }
+    }
+
+    .header__nav{
+      display: flex;
+
+      &-link {
+        color: $primary-font-color;
+        text-decoration: none; 
+        font-family: $primary-font1;
+        font-size: 20px;
+        padding: 11px 32px;
+        cursor: pointer;
+      }
+      
+      &-link:hover {
+        color: #ffffff;
+        background-color: $hover-button-color;
+      }
+
+      @media screen and (max-width: 952px) {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    background-color: $primary-background-color;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 80px;
+  }
+}
+

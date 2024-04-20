@@ -1,0 +1,73 @@
+$primary-background-color: #ffffff;
+$primary-font-color: #292929;
+$primary-font1: 'Roboto';
+$primary-font2: 'Arial';
+
+.map {
+  height: 932px;
+  width: 100%;
+  background-color: $primary-background-color;
+
+  @media screen and (max-width: 1400px) {
+    height: 1120px;
+  }
+
+  @media screen and (max-width: 952px) {
+    height: 1120px;
+  }
+
+  .map__wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .map__title {
+      margin-right: auto;
+      margin-top: 115px;
+      margin-left: 260px;
+      margin-bottom: 46px;
+      width: auto;
+      font-size: 80px;
+      font-family: $primary-font2;
+      font-weight: 900;
+      color: $primary-font-color;
+      line-height: 160px;
+
+      @media screen and (max-width: 1400px) {
+        margin: 53px 32px 28px 32px;
+        font-size: 60px;
+        line-height: 84px;
+      }
+    
+      @media screen and (max-width: 952px) {
+        margin: 53px 32px 28px 32px;
+        font-size: 60px;
+        line-height: 84px;
+      }
+    }
+
+    .map__content {
+      height: 680px;
+      width: 100%; 
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+
+      @media screen and (max-width: 1400px) {
+        height: 953px;
+      }
+    
+      @media screen and (max-width: 952px) {
+        height: 953px;
+      }
+      
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

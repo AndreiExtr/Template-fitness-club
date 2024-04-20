@@ -1,0 +1,105 @@
+$primary-background-color: #EBEBE9;
+$primary-font-color: #333333;
+$hover-button-color: #333333;
+$primary-font1: 'Roboto';
+$primary-font2: 'Arial';
+
+.main{
+  height: 800px;
+  background-color: $primary-background-color;
+  display: flex; 
+  justify-content: center; 
+  align-items: flex-end;
+
+  @media screen and (max-width: 952px) {
+    height: 525px;
+  }
+
+  &__wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    max-width: 1400px;
+
+    .main__title{
+      position: absolute;
+      top: -800px;
+      left: 5vw;
+      width: max-content;
+      font-size: clamp(14px, 10vw, 160px);
+      font-family: $primary-font2;
+      font-weight: 900;
+      color: #CFCFCD;
+      letter-spacing: 5%;
+      line-height: 160px;
+
+      @media screen and (max-width: 952px) {
+        top: -520px;
+        left: 10vw;
+        width: max-content;
+        font-size: clamp(14px, 10vw, 160px);
+        line-height: 100px;
+      }
+    }
+
+    .main__image{
+      position: absolute;
+      height: 900px;
+      width: auto;
+      bottom: 0;
+      left: -250px;
+
+      @media screen and (max-width: 952px) {
+        height: 624px;
+        width: auto;
+        bottom: 0;
+        left: -150px;
+      }
+    }
+
+    .content-main{
+      position: absolute;
+      height: auto;
+      width: 600px;
+      right: 0;
+      bottom: 192px;
+      z-index: 1;
+
+      @media screen and (max-width: 952px) {
+        right: 0;
+        bottom: 0;
+        width: 363px;
+        margin-right: 32px;
+        margin-bottom: 32px;
+      }
+
+      &__text{
+        height: auto;
+        font-family: $primary-font1;
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary-font-color;
+        letter-spacing: 5%;
+        line-height: 24px;
+      }
+
+      &__button{
+        color: $primary-font-color;
+        background-color: $primary-background-color;
+        font-family: $primary-font1;
+        font-size: 20px;
+        margin-top: 16px; 
+        padding: 8px 24px;
+        border: none;
+        cursor: pointer;
+      }
+
+      &__button:hover{
+        color: #ffffff;
+        background-color: $hover-button-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+$primary-background-color: #ffffff;
+$primary-font-color: #000000;
+$hover-button-color: #333333;
+$primary-font1: 'Roboto';
+$primary-font2: 'Arial';
+
+.about{
+  height: 973px;
+  background-color: $primary-background-color;
+  display: flex; 
+  justify-content: center; 
+
+  @media screen and (max-width: 1400px) {
+    padding: 0, 32px;
+    height: 952px;
+  }
+
+  @media screen and (max-width: 952px) {
+    padding: 0, 32px;
+    height: 952px;
+  }
+
+  &__wrapper{
+    position: relative;
+    width: 100%; 
+    max-width: 1400px;
+
+    .about__title{
+      position: absolute;
+      top: 169px;
+      left: 0;
+      z-index: 1;
+      width: 1324px;
+      font-size: clamp(14px, 10vw, 80px);
+      font-family: $primary-font2;
+      font-weight: 900;
+      color: #292929;
+      line-height: 90px;
+
+      @media screen and (max-width: 1400px) {
+        top: 90px;
+        left: 32px;
+        width: 562px;
+        font-size: clamp(14px, 10vw, 60px);
+        line-height: 70px;
+        z-index: 1;
+      }
+
+      @media screen and (max-width: 952px) {
+        top: 65px;
+        left: 32px;
+        width: 562px;
+        font-size: clamp(14px, 10vw, 60px);
+        line-height: 70px;
+        z-index: 1;
+      }
+    }
+
+    .about__image{
+      position: absolute;
+      height: 596px;
+      width: 953px;
+      bottom: 0;
+      right: -200px;
+
+      @media screen and (max-width: 1600px) {
+        height: 374px;
+        width: 598px;
+        right: 0;
+        bottom: 0;
+      }
+
+      @media screen and (max-width: 1400px) {
+        height: 374px;
+        width: 598px;
+        right: 0;
+        bottom: 0;
+      }
+
+      @media screen and (max-width: 952px) {
+        height: 374px;
+        width: 598px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    .about-content{
+      position: absolute;
+      top: 72px;
+      left: 206px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 670px;
+      width: 562px;
+      border: 6px solid #FF8340;
+      padding: 25px 45px;
+
+      @media screen and (max-width: 952px) {
+        top: 16px;
+        left: 116px;
+      }
+
+      &__text{
+        height: auto;
+        font-family: $primary-font1;
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary-font-color;
+        letter-spacing: 5%;
+        line-height: 24px;
+      }
+
+      &__button{
+        color: $primary-font-color;
+        background-color: $primary-background-color;
+        font-family: $primary-font1;
+        width: 233px;
+        font-size: 20px;
+        margin-top: 16px; 
+        padding: 8px 24px;
+        border: none;
+        cursor: pointer;
+      }
+
+      &__button:hover{
+        color: #ffffff;
+        background-color: $hover-button-color;
+      }
+    }
+  }
+}

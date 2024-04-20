@@ -1,0 +1,8 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Распределяем элементы равномерно по горизонтали */
+  align-items: center;
+  width: 100%; /* Ширина контейнера, можно изменить по вашему усмотрению */
+  max-width: 1300px; /* Максимальная ширина контейнера, чтобы он не был слишком широким */
+}
